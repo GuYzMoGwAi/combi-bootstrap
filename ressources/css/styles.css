@@ -1,0 +1,871 @@
+/* Document information
+				-Document: Combi & Cie
+				-Version: 1.0.0
+				-Author: Lewis
+*/
+
+/* 
+browser-sync ./--no-open --no-ui --no-notify -s -f "./styles.css"
+
+
+/*Colors
+	-h1: 
+	-h2:
+	-h3
+
+    -button
+    -button:hover
+
+    -icon  black
+
+
+*/
+
+
+/*Font
+	-default= lato,
+
+*/
+
+
+/*CSS Directory
+	1.Globale
+	2.Header
+	3.Produits
+
+*/
+
+/*----------Glabale----------*/
+
+html{
+	height: 100vh
+
+}
+
+body {
+	height:100%;
+	background-color: lightcyan;
+}
+
+h1,h2,h3, {
+	font-family: 'lato', 'arial', 'sans-serif', 'sanchez';
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 200px;
+	word-spacing: 8px;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	padding-bottom: 50px;
+	margin-top: -80px;
+}
+
+h2 {
+	color: black;
+	font-size: 250%;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+h2:after {
+	display: block;
+	height: 2px;
+	background-color: purple;
+	width: 150px;
+	content: " ";
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+
+
+h3 {
+	color: black;
+	text-align: center;
+	font-size: 20px;
+}
+
+h4 {
+	color: black;
+	font-weight: 250;
+	font-size: 100%;
+}
+
+
+p {
+	color: white;
+	text-align: center;
+	margin-top: 80px;
+	text-shadow: 0 0 2px;
+}
+
+.p-presentation {
+	color: white;
+	text-shadow: 1px 1px 5px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+
+
+/*----------Header-----------*/
+.header {
+	background-image: url(../images/combi.jpg);
+	background-position: fixed;
+	height: 100vh;	             
+	background-position: center;
+	background-size: cover;
+	border-radius: box-shadow;
+	margin-bottom: 10px;
+}
+
+.home-title {
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 8px;
+
+}
+
+.home-title h1 {
+	font-size: 300%;
+	color: black;
+}
+
+.home-title h1 span {
+	font-weight: 200;
+}
+
+/*----------Button----------*/
+
+.btn {
+	display: inline-block;
+	padding-right: 10px ;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: background-color 1s, color 1s;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+
+.btn-full {
+	background-color: azure;
+	color: purple;
+	text-align: center;
+}
+
+.btn-ghost {
+	background-color: azure;
+	color: purple;
+}
+
+.btn-ghost1 {
+	background-color: azure;
+	color: purple;
+}
+
+.btn-full:hover {
+	background-color: purple;
+	color: white;
+}
+
+.btn-ghost:hover {
+	background-color: purple;
+	color: white;
+}
+
+.btn-ghost1:hover {
+	background-color: purple;
+	color: white;
+}
+
+li .btn {
+	text-align: center;
+}
+
+/* --------Liste Combi ---------*/
+
+.bgpaysage {
+	background-image: url(../images/pôlenord.jpg);
+	background-repeat: no-repeat;
+	background-position: fixed;
+
+}
+
+.pcombi {
+	text-align: center;
+	color: black;
+	margin-top: 50px;
+}
+
+.combi-plus {
+	max-width: 3500px;
+	height: 350px; 
+	margin: 10px 0 ;
+	margin-bottom: 0;
+}
+
+.combi-plus:hover {
+	color: #8b2;
+	transform: translateX(20px);
+}
+
+.combi-img {
+	max-width: 100%;
+	height: auto;
+	margin: 50px;
+	margin-top: 70px;
+}
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.snip1438 {
+  position: relative;
+  overflow: hidden;
+  font-size: 30px;
+  color: rgba(102, 153, 255, 0.8);
+  margin: 40px;
+  padding: 3px;
+  display: inline-block;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.snip1438::before {
+  background-color: #2b2b2b;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+.snip1438:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4d88ff;
+  content: '';
+  z-index: -1;
+  display: inline-block;
+  -webkit-transform: rotate(-45deg) scale(1.5) translate(0%, -100%);
+  transform: rotate(-45deg) scale(1.5) translate(0%, -100%);
+}
+.snip1438:before,
+.snip1438:after {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.snip1438:hover,
+.snip1438:active,
+.snip1438.hover {
+  color: #ffffff;
+}
+.snip1438:hover:after,
+.snip1438:active:after,
+.snip1438.hover:after {
+  -webkit-transform: rotate(-45deg) scale(1.5) translate(0%, 0%);
+  transform: rotate(-45deg) scale(1.5) translate(0%, 0%);
+}
+
+/*test icon*/
+
+
+
+/*Galeries photos*/
+
+.bg-caracteristique {
+	background-image: url(../images/test.jpg);
+	background-position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-weight: 100vh;
+
+}
+
+.galeries-img {
+	display: block;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 300px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+}
+
+.galeries-title {
+	position: absolute;
+	bottom: 40px;
+	left: 20px;
+}
+
+.galeries-title h4 {
+	color: white;
+}
+
+/*-------Caractéristique------*/
+
+
+.pack {
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.pack h3 {
+	color: black;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 15px;
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+
+
+.h4-pack {
+	text-align: center;
+	color: #2be;
+}
+
+.p-fiche {
+	font-family: 'lato', 'arial', 'sans-serif', 'sanchez';
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.pack-title span {
+	font-weight: 200;
+	font-size: 15px;
+	position: relative;
+	top: -10px;
+	left: 2px;
+	color: white;
+}
+
+.pack-premium {
+	background-color: #00b300;
+	color: white;
+}
+
+
+.pack-title {
+	padding: 10px 10px 0 10px;
+	border-bottom: 1px solid #e3e0e0;
+	color: black;
+	background: white;
+}
+
+
+.pack-title-premium {
+	top: 10px;
+	right: 30px;
+	background-color: #fff;
+
+}
+
+
+.pack-elite {
+	background-color: #00b300;
+	color: white;
+}
+
+
+.pack-content ul {
+	list-style: none;
+	padding: 20px;
+	font-weight: 300;
+	line-height: 35px;
+}
+
+.pack-content ul li i {
+	font-size: 90%;
+	margin-right: 10px; 
+}
+
+.btn-pack {
+	margin-left: auto;
+}
+
+
+.pack-signup{
+	text-align: center;
+	background: white;
+}
+
+pack-signup:hover .btn-pack {
+	background-color: green;
+	color: #fff;
+}
+
+
+.btn-pack {
+	background-color: #8b2;
+	color: black;
+	margin-bottom: 2px;
+}
+
+/*----------CONTACT-----------*/
+
+.contact-form {
+	margin-bottom: 30px;
+
+}
+
+.contact-message {
+	width: 100%;
+}
+
+.btn-contact {
+	background-color: green;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.adress {
+	padding-left: 100px;
+}
+
+.map {
+	padding-top: 150px;
+}
+
+/*-------------footer---------------*/
+
+footer {
+	background-color: black;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	height: 150px;
+}
+
+.p-footer {
+	color: black;
+	margin-top: 50px;
+}
+
+.copyright {
+	padding: 15px;
+}
+
+.copyright a {
+	color: green;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+span {
+  content: "\00A9";
+} 
+
+ /*-------------MENU-------------*/
+
+.monbg{
+ 	background-image: linear-gradient(to bottom, #3082cd, #1d70c4, #105eb9, #114bad, #1a379f);
+
+ }
+ .navbar-light .navbar-nav .nav-link {
+ 	color: white;
+ }
+
+a.nav-item {
+	font-size: 15px;
+
+}
+
+a.nav-link{
+ 	color: white;
+
+ }
+
+ /*-----------css Actus-------------*/
+
+/*----Header atus----*/
+
+.actus {
+	background-image: linear-gradient(to bottom, #0e42bb, #5a62c9, #8583d6, #aca7e3, #d0ccef, #d8cbee, #e0cbec, #e7caea, #e59ec8, #e36f96, #d63e56, #b70b0b);
+	background-size: contain;
+	margin-bottom: 10px;
+}
+
+.p-actus {
+	color: black;
+}
+
+.icon-ctn {
+	font-size: 350px;
+	color: black;
+	text-align: center;
+}
+
+/*------------CSS inscription---------------*/
+
+
+.p-inscription {
+	color: white;
+	font-size: 25px;
+}
+
+.p-inscrip {
+	font-size: 15px;
+	color: black;
+}
+
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 1px solid #ced4da;
+    margin-bottom: 2%;
+    background: white;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%; 
+    width: 20%;
+    cursor: pointer;
+    background: #0062cc;
+    color: #fff;
+    margin-left: 400px;
+    margin-top: 10px;
+}
+
+.retour {
+	text-align: center;
+	border:0;
+	border-radius: 1.5rem;
+	padding: 1%;
+	width: 15%;
+	cursor: pointer;
+	background: #0062cc;
+	color: #fff;
+	margin-left: 425px;
+    margin-top: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+.overlay:target {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 11;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+
+.register-form {
+	z-index: 10;
+}
+
+/*------------CSS connexion---------------*/
+
+.connexion {
+	background: linear-gradient(87deg, rgba(16,7,168,1) 0%, rgba(77,183,194,1) 52%, rgba(109,27,172,1) 100%);
+	border-radius: 30px;
+	margin: auto;
+	width: auto;
+	padding: 1em;
+	border: 3px solid black;
+	height: 50vh;
+	margin-top: 100px;
+}
+.form-control {
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+.btn-co {
+	color: black;
+	border: 2px solid black;
+	border-radius: 10px;
+	margin-left: 70px;
+	background-color: azure;
+	color: purple;
+	text-align: center;
+}
+
+
+.r-connexion {
+	margin-top: 0;
+
+}
+
+.col-co {
+	-ms-flex: 0 0 10%;
+	flex: 0 0 25%;
+	max-width: 50%;
+	margin-left: 200px;
+}
+.h2-co {
+	margin-top: -20px;
+	text-align: center;
+}
+
+.mdp-oublié {
+	text-align: center;
+	font-size: 15px;
+	color: black;
+}
+.a-co {
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.Envoyer {
+	color: white;
+	border: 1px;
+	border-radius: 10px;
+	background: #0062cc;
+}
+.co-retour {
+	text-align: center;
+	border:0;
+	border-radius: 1.5rem;
+	padding: 1%;
+	width: 15%;
+	cursor: pointer;
+	background: #0062cc;
+	color: #fff;
+    margin-top: 10px;
+}
+
+/*------- Style CSS Admin ------*/
+
+/* The sidebar menu */
+.sidenav {
+  	height: 100%; 
+  	width: 160px; 
+  	position: fixed; 
+  	z-index: 1; 
+  	background-color: #5c8a8a; 
+ 	padding-top: 50px;
+ 	text-align: center;
+}
+
+
+.sidenav a {
+  	padding: 6px 8px 6px 16px;
+  	text-decoration: none;
+  	font-size: 25px;
+  	display: block;
+  	color: white;
+  	text-align: center;
+}
+
+.sidenav a .icon-admin {
+	font-size: 30px;
+	color: white;
+	margin-left: auto;
+}
+
+
+.sidenav a:hover {
+  	color: #f1f1f1;
+}
+
+/*------ top menu ------*/
+
+
+.topnav {
+	margin-left: 160px;
+  	overflow: hidden;
+  	background-color: #5c8a8a;
+}
+
+
+.topnav a {
+  	float: left;
+  	display: block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+ 	text-decoration: none;
+ 	font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #476b6b;
+  color: white;
+}
+
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+@media screen and (max-width: 600px) {
+	.topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.a-admin {
+	padding-top: 5px;
+	margin-top: 5px;
+	color: black;
+}
+
+.bg-bodyadmin {
+	background-color: lightcyan;
+}
+
+.bg-admin {
+	background-color: lightcyan;
+}
+
+.graphique {
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+.img-admin {
+	padding-right: 50px;
+}
+
+.img-admin1 {
+	padding-left: 160px;
+}
+
+ 
+/*----- Tableau admin -----*/
+
+}
+
+table {
+	margin-top: 50px;
+	border: medium solid #6495ed;
+	border-collapse: collapse;
+	width: 100%;
+	border-color: black;
+}
+
+table.colonne {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	float: center;
+}
+
+  
+
+
+th {
+	font-family: monospace;
+	border: thin solid #6495ed;
+	padding: 5px;
+	background-color: #D0E3FA;
+	background-image: url(sky.jpg);
+}
+
+td {
+	font-family: sans-serif;
+	border: thin solid #6495ed;
+	padding: 5px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+
+tr td i {
+	padding-left: 5px;
+}

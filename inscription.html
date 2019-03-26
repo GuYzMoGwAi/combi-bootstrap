@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+ 	<html>
+
+
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="widht=device-widht, initial-scale=1">
+
+		<title>Insciption</title>
+
+		<!--Fonts-->
+			<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Sanchez:400,400" rel="stylesheet">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+         <!--Styles-->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	        <link rel="stylesheet" href="ressources/css/styles.css" >
+
+	</head>
+
+<!------------Inscription-------------->
+	<body>
+		
+		<div class="container register-form">
+            <div class="form">
+                <div class="note">
+                    <p class="p-inscription">Inscription.</p>
+                </div>
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Votre Nom " value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}" class="form-control" placeholder="Numéro de téléphone" value=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Votre mot de passe" value=""/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confimer votre mot de passe" value=""/>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#popup">
+                    <button type="button" class="btnSubmit">soumettre l'inscription</button><br>
+                	</a>
+                    <a href="index.html"><input type="button"  class="retour" name="Retour "value="Retour"/></a>
+
+                    <div id="popup" class="overlay">
+                    	<div class="popup">
+                    		<h2>Envoyer</h2>
+
+                    			<div class="content">
+                    				<p class="p-inscrip">Votre inscription a bien été envoyé !</p>
+                    			</div>
+                    				<a href="inscription.html"><input type="button"  class="retour" name="Retour "value="Retour"/></a>
+                    			
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+				
+
+	</body>
+
+	
+      
+	</html>
